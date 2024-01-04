@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "plans",
+    "dateExported": "2024-01-04T12:41:34.668Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c4f75eb9-52fe-48e5-a16a-0dc3893544cb",
+            "colId": "09457ffa-fdb9-4d6e-a047-7605b7519674",
+            "containerId": "",
+            "name": "AddNewPlan",
+            "url": "http://localhost:3002/plans/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-18T05:46:14.646Z",
+            "modified": "2023-11-06T10:00:19.149Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Migrating mysql schema and taking backup of data\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d5093b34-1665-4574-acd8-2ce81d804d12",
+            "colId": "09457ffa-fdb9-4d6e-a047-7605b7519674",
+            "containerId": "",
+            "name": "GetPlans",
+            "url": "localhost:3002/plans",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-06T07:41:43.805Z",
+            "modified": "2023-11-06T07:42:04.653Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

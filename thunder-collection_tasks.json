@@ -1,0 +1,122 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "tasks",
+    "dateExported": "2024-01-04T12:41:16.683Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8d01f071-5419-439b-b1d9-a15c312aa853",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "TasksByPlanId",
+            "url": "http://localhost:3002/tasks/plan/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-16T12:05:20.895Z",
+            "modified": "2023-11-20T13:40:49.261Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ff12f0ff-c501-4980-b0ae-95c7cc0cb0a2",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "TasksByMemberId",
+            "url": "http://localhost:3002/tasks/member/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-16T12:09:34.327Z",
+            "modified": "2023-11-03T17:24:49.535Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f49e2317-d492-491c-9ccf-adcae0a0d670",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "AddTask",
+            "url": "http://localhost:3002/tasks/update",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-20T14:46:53.860Z",
+            "modified": "2023-11-23T11:34:30.289Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"planId\": 2,\n  \"name\": \"Testinnng deleteeee functionalityyy\",\n  \"status\": \"Not Started\",\n  \"priority\": \"Low\",\n  \"startDate\": 1699641000000,\n  \"dueDate\": 1699986600000,\n  \"created\": 1699014399938,\n  \"updated\": 1699014399938,\n  \"notes\": \"\",\n  \"members\": [2, 5],\n  \"labels\": [],\n  \"comments\": []\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1435835c-6f96-4eeb-8ed4-cc781ff10fbf",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "UpdateTaskById",
+            "url": "http://localhost:3002/tasks/update",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-10-23T10:41:10.853Z",
+            "modified": "2023-12-11T12:55:56.657Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"id\": 5,\r\n    \"name\": \"Rectifying UI of card for displaying tasks\",\r\n    \"planId\": 1,\r\n    \"status\": \"Not Started\",\r\n    \"priority\": \"Low\",\r\n    \"startDate\": 1698051898959,\r\n    \"dueDate\": 1697814009647,\r\n    \"created\": 1698051898959,\r\n    \"updated\": 1702299221600,\r\n    \"notes\": \"\",\r\n    \"members\": [\r\n        1,\r\n        3\r\n    ],\r\n    \"labels\": [\r\n        {\r\n            \"color\": \"Green\",\r\n            \"value\": \"UI\"\r\n        }\r\n    ],\r\n    \"comments\": []\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cedb4753-44fb-4b6d-b87a-17f3452febcd",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "TaskDetailsById",
+            "url": "http://localhost:3002/tasks/details/10",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-11-04T04:15:50.325Z",
+            "modified": "2023-12-10T10:36:03.657Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1f231bc6-7a82-42a4-8f81-b2b7de1cbaa9",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "DeleteTaskById",
+            "url": "http://localhost:3002/tasks/delete/32",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-11-04T04:41:02.129Z",
+            "modified": "2023-11-04T04:42:17.174Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5679a97d-77cb-437f-9656-2cc8663620a6",
+            "colId": "8f477fb0-150e-487e-b3f2-93e98d94e1f5",
+            "containerId": "",
+            "name": "UpdateTaskStatusById",
+            "url": "http://localhost:3002/tasks/updateStatus",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-12-15T06:50:48.506Z",
+            "modified": "2023-12-15T08:13:38.777Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"id\": 5,\n    \"status\": \"Not Started\",\n    \"dueDate\": 1702628004249\n\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
